@@ -7,13 +7,14 @@ describe('DetailItem component', () => {
 
   it('renders DetailItem', () => {
     const { asFragment } = render(<DetailItem
-      characterDetail={}
+      characterDetail="{}"
       name="test Name"
       status="test Status"
       species="test Species"
       genfder="test Gender"
       origin="test Origin"
       image="test Image"
+    
     />);
     expect(asFragment()).toMatchSnapshot();
   });

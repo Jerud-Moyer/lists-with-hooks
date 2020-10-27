@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailItem component renders DetailItem 1`] = `
+<DocumentFragment>
+  <h1>
+    test Name
+  </h1>
+  <img
+    alt="test Name"
+    src="test Image"
+  />
+  <ul>
+    <li>
+      status: test Status
+    </li>
+    <li>
+      species: test Species
+    </li>
+    <li>
+      gender: 
+    </li>
+    <li>
+      origin: 
+    </li>
+  </ul>
+</DocumentFragment>
+`;

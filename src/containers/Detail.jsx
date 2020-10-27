@@ -19,7 +19,7 @@ const Detail = props => {
 
   return (
     <div>
-      <DetailItem characterDetail={characterDetail} />s
+      <DetailItem { ...characterDetail } />s
     </div>
   );
 

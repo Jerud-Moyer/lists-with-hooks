@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const DetailItem = ({ characterDetail }) => (
+const DetailItem = ({ name, image, status, species, gender, origin }) => (
   <>
-    <h1>{characterDetail.name}</h1>
-    <img src={characterDetail.image} alt={name} />
+    <h1>{name}</h1>
+    <img src={image} alt={name} />
     <ul>
-      <li>status: {characterDetail.status}</li>
-      <li>species: {characterDetail.species}</li>
-      <li>gender: {characterDetail.gender}</li>
-      <li>origin: {characterDetail.origin.name}</li>
+      <li>status: {status}</li>
+      <li>species: {species}</li>
+      <li>gender: {gender}</li>
+      <li>origin: {origin.name}</li>
     </ul>
   </>
 );
 
 DetailItem.propTypes = {
-  characterDetail: PropTypes.object,
+  
   name: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   species: PropTypes.string.isRequired,
