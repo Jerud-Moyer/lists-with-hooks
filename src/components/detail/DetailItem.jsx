@@ -15,12 +15,14 @@ const DetailItem = ({ characterDetail }) => (
 );
 
 DetailItem.propTypes = {
+  characterDetail: PropTypes.object,
   name: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   species: PropTypes.string.isRequired,
   gender: PropTypes.string.isRequired,
   origin: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired
+  
 };
 
 export default DetailItem;

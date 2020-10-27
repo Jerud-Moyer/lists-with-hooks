@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const Detail = props => {
   const [loading, setLoading] = useState(true);
   const [characterDetail, setCharacterDetail] = useState({});
-  // const characterId = props.match.params.id;
+  
 
   useEffect(() => {
     fetchCharById(props.match.params.id)
@@ -14,7 +14,6 @@ const Detail = props => {
       .finally(() => setLoading(false));
   }, []);
 
-  console.log(characterDetail);
 
   if(loading) return <h1 data-testid="loading">Loading.1.2.3.</h1>;
 
